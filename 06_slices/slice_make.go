@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	s := make([]string, 3)
+	s := make([]string, 3) // make se usa para crear un slice de tamaño cero
 	fmt.Println("slice vacío:", s)
 
 	s[0] = "a" // ingresando elementos al slice s
