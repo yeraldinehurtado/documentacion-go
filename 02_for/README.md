@@ -4,9 +4,9 @@
 
 <p>Un bucle es un conjunto de <strong>sentencias que pueden ejecutarse más de una vez. </strong> En GO existe un único bucle, llamado <em>for</em>, pero que puede ser usado de distintas formas. La más sencilla corresponde a la siguiente sintaxis: </p>
 
-```for condición {
+'''for condición {
     bloque
-}´´´
+}'''
 
 <p>Donde <em>condición</em> es un valor booleano, o cualquier expresión que devuelva un valor booleano. EL bloque se escribe entre llaves y se suele indentar para mejorar la lectura del código.</p>
 
@@ -15,9 +15,9 @@
 <h3>Bucle FOR compuesto</h3>
 <p>En un blucle <em>for</em> es muy habitual crear una variable que servirá de contador y que se define justamente antes de entrar en el bucle. También es muy habitual actualizar dicha variable al terminar de ejecutar todas las sentencias del bloque. Por ello los diseñadores de Go crearon otra forma de utilizar el bucle <em>for</em>, que tiene la siguiente sintaxis.</p>
 
-```for inicio ; condición ; actualizacion {
+'''for inicio ; condición ; actualizacion {
     bloque
-}```
+}'''
 
 <p>Esta sentencia <em>for</em> tiene tres partes:</p>
 <ul>
