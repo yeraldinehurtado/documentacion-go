@@ -6,7 +6,7 @@
 
 ```for condición {
     bloque
-}```
+}´´´
 
 <p>Donde <em>condición</em> es un valor booleano, o cualquier expresión que devuelva un valor booleano. EL bloque se escribe entre llaves y se suele indentar para mejorar la lectura del código.</p>
 
