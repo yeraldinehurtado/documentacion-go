@@ -38,12 +38,15 @@
 
 <p>Algunas veces, sobre todo si los vectores son de tipo cadena, es conveniente, para mejorar la visualización del código, escribir cada elemento en una línea. Si lo hacemos de este modo el último elemento también debe de llevar una coma.</p>
 
-<code>var deporte = [3]string{
-"canicas",
-"peonza",
-"chapas"
-}</code>
-<code>fmt.Println(deporte)</code>
+```
+var deporte = [3]string{
+    "canicas",
+    "peonza",
+    "chapas"
+}
+
+fmt.Println(deporte)
+```
 
 <p> Información tomada de: </p>
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>

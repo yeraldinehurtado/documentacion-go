@@ -3,11 +3,13 @@
 <p>La elección entre dos caminos para ejecutar una o varios bloques de sentencias se consigue con la estructura if ... else.</p>
 <p>Sintaxis de if ... else en Go:</p>
 
-<code>if Condición { 
+```
+if Condición { 
     bloque 1
 } else {
     bloque 2
-}</code>
+}
+```
 
 <p>Funciona del siguiente modo:</p>
 
