@@ -17,5 +17,5 @@
 <li>Si la condición es <em>false </em>entonces se ejecutan todas las sentencias del bloque 2</li>
 </ul>
 
-
+<p> Información tomada de: </p>
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>

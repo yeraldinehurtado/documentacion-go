@@ -28,4 +28,5 @@
 
 <p>Esta forma de ejecutar el bucle for puede ser un poco más cómoda, pero su funcionamiento es exactamente igual al for simple.</p>
 
+<p> Información tomada de: </p>
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>
