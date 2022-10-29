@@ -39,3 +39,8 @@ m := map[string]int{
 delete(m, "Euler")
 fmt.Println(m) // -> map[Riemann:1826]
 ```
+
+
+<p> Información tomada de: </p>
+<a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>
+<a href="http://memoriascimted.com/wp-content/uploads/2021/08/Programacion-estructurada-en-Go-lang.pdf">Segundo enlace aquí.</a>

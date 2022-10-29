@@ -18,7 +18,7 @@ func main2() {
 	// Imprime los número del 1 al 10
 	i := 1 //inicializa variable
 
-	for i <= 10 {
+	for i <= 10 { // ciclo while 
 		fmt.Println(i)
 		i++          // alguna vez i será 11
 	}
