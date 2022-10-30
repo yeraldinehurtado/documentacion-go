@@ -4,6 +4,15 @@
 
 <p>Todo paquete principal debe tener una función principal, llamada <em>main(). </em>El contenido de la función <em>main()</em> debe ir entre llaves. Para indicar que <em>main()</em> es una función utilizamos la palabra clave (keyword) <strong>func.</strong></p>
 
+```
+package main
+
+func main(){
+    
+}
+
+```
+
 <h2>Las palabras reservadas en GO</h2>
 
 <p>En GO existen 25 palabras reservadas, que <strong>no se pueden usar como nombres de variables. </strong>Estas palabras son:</p>
