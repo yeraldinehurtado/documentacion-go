@@ -8,7 +8,7 @@ func area(base int, altura int) int {
 	return resultado
 }
 
-func main() {
+func main6() {
 	a := area(45, 90)
 	fmt.Println(a)                              // imprime -> 4050
 	fmt.Println("Ahora el área es", area(7, 9)) // imprime -> Ahora el área es 63

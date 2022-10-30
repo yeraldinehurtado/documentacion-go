@@ -86,6 +86,32 @@ func h2(a int, b int) (r int) {
 
 ```
 
+<h2>Funciones variádicas</h2>
+
+<p>Las funciones variádicas pueden ser llamadas con cualquier número de argumentos</p>
+
+<p>Por ejemplo:</p>
+
+```
+func sum(nums ...int){
+    fmt.Print(nums, " ")
+    total := 0
+    for _, num := range nums {
+        total += num
+    }
+    fmt.Println(total)
+}
+
+func main(){
+
+    sum(1, 2)
+    sum(1, 2, 3)
+
+    nums := []int{1, 2, 3, 4}
+    sum(nums...)
+}
+
+```
 
 <p> Información tomada de: </p>
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>
