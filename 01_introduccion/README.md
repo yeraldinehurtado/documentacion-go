@@ -8,7 +8,7 @@
 package main
 
 func main(){
-    
+
 }
 
 ```
@@ -45,6 +45,56 @@ func main(){
     <li>var</li>
 </ul>
 
-<h3>Información tomada de: </h3>
+<h2>Imprimir por pantalla.</h2>
+
+<h3>Función Println()</h3>
+
+<p>Si queremos imprimir una frase por pantalla podemos utilizar la función Println() contenida en el paquete fmt. Esta función debe ir dentro de la función main(). La frase que queramos mostrar por pantalla debe ir entre comillas dobles y dentro del paréntesis de la función Println(). Además si queremos trabajar con la función Println() debemos importar el paquete que la contiene, llamado fmt. Esto se consigue con la sentencia import y escribiendo entre comillas dobles el nombre del paquete.</p>
+
+<p>Por ejemplo:</p>
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hola mundo")
+}
+```
+
+<h3>Función Print()</h3>
+
+<p>La función Print() es muy similar a la función Println(), pero con la diferencia de que no crea un salto de línea después de ejecutarse. Se suele usar mucho menos que la función Println().</p>
+
+<p>Por ejemplo:</p>
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Print("Primera línea.")
+    fmt.Print("Me temo que también primera línea.")
+}
+```
+
+<h3>Función Printf()</h3>
+
+<p>La función Printf() permite tener mucho más control sobre la salida. En general la función Printf() sustituye cada una de las apariciones de %v por el valor que colocamos después de la cadena de texto.</p>
+
+<p>Por ejemplo:</p>
+
+```
+fmt.Printf("Un salto de línea.\n")
+
+fmt.Printf("La capital de España es %v.\n", "Madrid")
+
+fmt.Printf("Me llamo %v y tengo %v años.", "Rambo", 100)
+
+```
+
+<h4>Información tomada de: </h4>
 
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>
