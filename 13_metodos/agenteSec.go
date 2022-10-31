@@ -16,7 +16,7 @@ func (a agenteSecreto) presentarse() {
 	fmt.Println("Hola, soy", a.nombre, a.apellido)
 }
 
-func main() {
+func main4() {
 	agenteSecreto1 := agenteSecreto{
 		persona: persona{
 			nombre:   "Yeraldine",

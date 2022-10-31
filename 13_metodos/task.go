@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main3() {
 	t1 := Task{
 		name:      "Curso de Go",
 		desc:      "Completar curso de Go",
