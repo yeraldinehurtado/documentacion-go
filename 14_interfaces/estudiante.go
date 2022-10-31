@@ -58,3 +58,16 @@ func main() {
 	bar(est1)
 	bar(p)
 }
+
+// imprime ->
+
+/*
+El estudiante Yeraldine 
+tiene el siguiente horario: 
+	 1. Matemáticas 
+	 2. Física 
+	 3. Química
+Fui pasado a la función bar {{Yeraldine Hurtado} {Matemáticas Física Química
+}}
+Fui pasado a la función bar {Elizabeth Muñoz}
+*/

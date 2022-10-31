@@ -16,7 +16,7 @@ func (r *rectangulo) perimetro() int {
 	return 2 * r.ancho + 2*r.alto
 }
 
-func main2() {
+func main3() {
 	r := rectangulo{
 		ancho: 10,
 		alto: 5,
@@ -26,3 +26,10 @@ func main2() {
 	fmt.Println("Perimetro: ", r.perimetro())
 
 }
+
+/*
+imprime ->
+
+area:  50
+Perimetro:  30
+*/

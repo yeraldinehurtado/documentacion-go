@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main3() {
+func main() {
 	t1 := Task{
 		name:      "Curso de Go",
 		desc:      "Completar curso de Go",
@@ -48,3 +48,13 @@ func (t *Task) markCompleted() {
 func (t *Task) toPrint() {
 	fmt.Printf("Name: %s\nDescription %s\ncompleted %t", t.name, t.desc, t.completed)
 }
+
+/*
+imprime ->
+
+Name: Curso de Go
+Description Completar curso de Go
+completed falseName: Curso de Html
+Description Completar curso de Html
+completed true
+*/

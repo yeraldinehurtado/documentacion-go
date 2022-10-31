@@ -22,7 +22,7 @@ func (e *estudiante) toPrint() { // metodo toPrint
 	fmt.Printf("El estudiante %s \ntiene el siguiente horario: \n\t 1. %s \n\t 2. %s \n\t 3. %s", e.nombre, e.materia1, e.materia2, e.materia3)
 }
 
-func main() {
+func main4() {
 	est1 := estudiante{
 		persona: persona{
 			nombre:   "Yeraldine",
@@ -37,3 +37,11 @@ func main() {
 
 	est1.toPrint()
 }
+
+/*
+El estudiante Yeraldine 
+tiene el siguiente horario: 
+	 1. Matemáticas 
+	 2. Física 
+	 3. Química
+*/
