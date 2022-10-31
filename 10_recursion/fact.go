@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // función que se llama a sí misma
+
 // con recursión
 func factorial(n int) int {
 	if n == 0 {
