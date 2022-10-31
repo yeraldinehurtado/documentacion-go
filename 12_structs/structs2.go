@@ -34,14 +34,14 @@ type TaskList struct {
 }
 
 func (taskList *TaskList) appendTask(t *Task) {
-	taskList.tasks = append(taskList.tasks, t)
+	taskList.tasks = append(taskList.tasks, t) // agregar lo que trae t
 }
 
-func (taskList *TaskList) deleteTask(index int) {
+func (taskList *TaskList) deleteTask(index int) { // metodo que elimina tarea por el indice
 	taskList.tasks = append(taskList.tasks[:index], taskList.tasks[index+1:]...)
 }
 
-func (t *Task) markCompleted() {
+func (t *Task) markCompleted() { 
 	t.completed = true
 }
 
