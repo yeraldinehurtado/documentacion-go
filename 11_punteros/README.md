@@ -7,6 +7,14 @@ Para crear un puntero se utiliza el operador ‘*’ antes del tipo de dato que 
 
 <code>var x *int</code>
 
+<h2>Cuándo usar punteros</h2>
+
+<p>Los punteros permiten compartir un valor almacenado en alguna ubicación de la memoria. Usa pointers cuando: </p>
+<ol>
+<li>No quiere pasar una cantidad grande de datos</li>
+<li>Quieres cambiar los datos en esa ubicación.</li>
+</ol>
+
 
 
 <p> Información tomada de: </p>

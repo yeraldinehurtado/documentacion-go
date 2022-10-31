@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func main2() {
 
 	defer func() {
 		if error := recover(); error != nil {
