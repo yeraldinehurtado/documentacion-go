@@ -1,39 +1,60 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"sync"
+	"time"
+)
 
-func f(from string) {
-	for i := 0; i < 3; i++ {
-		fmt.Println(from, ":", i)
+func main(){
+	start := time.Now()
+	wg := &sync.WaitGroup{}  // variable de tipo puntero
+
+
+	// forma tradicional 
+	for i := 0 ; i< 10; i++ {
+
+		wg.Add(1) // por cada iteracion vamos a agregar 1 goroutine
+
+		go showGoroutine(i, wg)
 	}
-}
+	
+	wg.Wait()
+	duration := time.Since(start).Milliseconds()
 
-func main() {
-	f("direct")
-
-	go f("goroutine")
-
-	go func(msg string) {
-		fmt.Println(msg)
-	}("going")
-
-	var input string
-	fmt.Scanln(&input)
-	fmt.Println("done")
+	fmt.Printf("%dms\n", duration)
 
 }
 
+func showGoroutine(id int, wg *sync.WaitGroup){
+	delay := rand.Intn(500)
+	fmt.Printf("Goroutine #%d with %dms\n", id, delay)
 
-/*
-Imprime ->
+	time.Sleep(time.Millisecond * time.Duration(delay))
 
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-goroutine : 1
-goroutine : 2
-going
+	wg.Done()
+}
 
-done
+
+// con la forma tradicional se tarda mas en ejecutar
+
+
+/* 
+for i := 0 ; i< 10; i++ {
+		showGoroutine(i)
+	}
+con for normal imprime :
+
+Goroutine #0 with 81ms
+Goroutine #1 with 387ms
+Goroutine #2 with 347ms
+Goroutine #3 with 59ms
+Goroutine #4 with 81ms
+Goroutine #5 with 318ms
+Goroutine #6 with 425ms
+Goroutine #7 with 40ms
+Goroutine #8 with 456ms
+Goroutine #9 with 300ms
+
 */
