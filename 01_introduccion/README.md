@@ -95,6 +95,17 @@ fmt.Printf("Me llamo %v y tengo %v años.", "Rambo", 100)
 
 ```
 
+<h3>Función Sprintf()</h3>
+
+<ul>
+    <li><strong>%s</strong>: Es para los String</li>
+    <li><strong>%d</strong>: Es para los números ya sean enteros, flotantes, etcétera.</li>
+    <li><stong>%t</stong>: para booleanos</li>
+    <li><strong>%v</strong>: Cuando no se sabe que valor retorna.</li>
+    <li><strong>%p</strong>: para punteros y canales.</li>
+    <li><strong>%g</strong>: Para float32, complex64.</li>
+</ul>
+
 <h4>Información tomada de: </h4>
 
 <a href="https://awebytes.files.wordpress.com/2020/10/librov1.pdf">Enlace aquí.</a>
