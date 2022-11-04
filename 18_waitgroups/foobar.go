@@ -17,7 +17,7 @@ func main() {
 	fmt.Println("Gorutines\t", runtime.NumGoroutine())
 
 	// antes de llamar a las goroutines , utilizar el
-	// metodo add para setear un contador que va a estar 
+	// metodo add para setear un contador que va a estar
 	// monitoreando cuantas goroutines va a haber en mi programa
 	// y cuntas van terminando, para que al final diga que
 	// "hey, ya no hay mas goroutines, puedes terminar."
@@ -30,7 +30,7 @@ func main() {
 	bar()
 
 	// wait monitorea ese contador y cuando llegue a 0
-	// le dice a main que ya no hay goroutines por ejecutar, 
+	// le dice a main que ya no hay goroutines por ejecutar,
 	// puede finalizar
 	wg.Wait()
 }
@@ -48,7 +48,6 @@ func bar() {
 		fmt.Println("bar:", i)
 	}
 }
-
 
 /*
 imprime ->

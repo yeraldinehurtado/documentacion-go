@@ -11,7 +11,7 @@ func main() {
 	fmt.Println("Hola")
 	var wait string
 	fmt.Scanln(&wait) // esto es para que no termine el programa hasta que yo coloque un enter
-	
+
 }
 
 func mi_nombre_lento(name string) {
@@ -21,7 +21,8 @@ func mi_nombre_lento(name string) {
 		time.Sleep(1000 * time.Millisecond) // que duerma un segundo cuando trata de imprimir la siguiente letra
 		fmt.Println(letra)
 	}
+
 }
 
-// concurrencia significa dividir un problema en diferentes 
-//ejecuciones que se ejecutan de forma concurrente (al mismo tiempo) 
+// concurrencia significa dividir un problema en diferentes
+//ejecuciones que se ejecutan de forma concurrente (al mismo tiempo)
