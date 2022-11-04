@@ -1,5 +1,6 @@
 package models
 
+//herencia
 type Empleado struct {
 	Humano
 	salario int64
