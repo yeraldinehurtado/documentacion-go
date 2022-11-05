@@ -24,5 +24,10 @@ func mi_nombre_lento(name string) {
 
 }
 
+// Nota : Todas las goroutines deben tener el tiempo suficiente para poder completarse
+// Si se alcanza el final del script o se cierra la ejecución manualmente las rutinas
+// en proceso también se cancelarán, ahí entran los canales
+
+
 // concurrencia significa dividir un problema en diferentes
 //ejecuciones que se ejecutan de forma concurrente (al mismo tiempo)
