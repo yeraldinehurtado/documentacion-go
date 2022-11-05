@@ -41,3 +41,114 @@ func main() {
 
 // data race: es cuando tenemos varias goroutinas accediendo a una
 // variable, comparten el acceso a esa variable y acceden simultáneamente
+
+
+/*
+Lo que imprime es muy inconsistente, imprime cosas diferentes
+una de esas es esta ->
+
+Número de CPUs 8
+Número de Goroutine 1
+Número de Goroutine 2
+Número de Goroutine 3
+Número de Goroutine 4
+Número de Goroutine 5
+Número de Goroutine 6
+Número de Goroutine 7
+Número de Goroutine 8
+Número de Goroutine 9
+Número de Goroutine 10
+Número de Goroutine 11
+Número de Goroutine 12
+Número de Goroutine 13
+Número de Goroutine 14
+Número de Goroutine 15
+Número de Goroutine 16
+Número de Goroutine 17
+Número de Goroutine 18
+Número de Goroutine 17
+Número de Goroutine 18
+Número de Goroutine 16
+Número de Goroutine 12
+Número de Goroutine 11
+Número de Goroutine 9
+Número de Goroutine 9
+Número de Goroutine 8
+Número de Goroutine 5
+Número de Goroutine 4
+Número de Goroutine 5
+Número de Goroutine 6
+Número de Goroutine 7
+Número de Goroutine 8
+Número de Goroutine 9
+Número de Goroutine 10
+Número de Goroutine 11
+Número de Goroutine 11
+Número de Goroutine 12
+Número de Goroutine 13
+Número de Goroutine 14
+Número de Goroutine 12
+Número de Goroutine 10
+Número de Goroutine 11
+Número de Goroutine 12
+Número de Goroutine 13
+Número de Goroutine 14
+Número de Goroutine 15
+Número de Goroutine 16
+Número de Goroutine 17
+Número de Goroutine 18
+Número de Goroutine 19
+Número de Goroutine 20
+Número de Goroutine 18
+Número de Goroutine 16
+Número de Goroutine 15
+Número de Goroutine 16
+Número de Goroutine 10
+Número de Goroutine 11
+Número de Goroutine 12
+Número de Goroutine 12
+Número de Goroutine 11
+Número de Goroutine 4
+Número de Goroutine 2
+Número de Goroutine 3
+Número de Goroutine 4
+Número de Goroutine 5
+Número de Goroutine 3
+Número de Goroutine 4
+Número de Goroutine 5
+Número de Goroutine 6
+Número de Goroutine 7
+Número de Goroutine 8
+Número de Goroutine 9
+Número de Goroutine 10
+Número de Goroutine 11
+Número de Goroutine 12
+Número de Goroutine 13
+Número de Goroutine 14
+Número de Goroutine 15
+Número de Goroutine 16
+Número de Goroutine 17
+Número de Goroutine 18
+Número de Goroutine 19
+Número de Goroutine 20
+Número de Goroutine 21
+Número de Goroutine 22
+Número de Goroutine 23
+Número de Goroutine 24
+Número de Goroutine 25
+Número de Goroutine 26
+Número de Goroutine 27
+Número de Goroutine 28
+Número de Goroutine 29
+Número de Goroutine 30
+Número de Goroutine 27
+Número de Goroutine 28
+Número de Goroutine 27
+Número de Goroutine 25
+Número de Goroutine 26
+Número de Goroutine 27
+Número de Goroutine 23
+Número de Goroutine 17
+Contador: 15
+
+*/
