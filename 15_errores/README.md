@@ -48,7 +48,24 @@ func main() {
 
 ```
 
+<h2>Printing & logging</h2>
 
+<p>Hay varias opciones a escoger cuando necesitas imprimir o hacer logging de un error :</p>
+<code>fmt.Println()</code>
+<p>Imprime el error en pantalla</p>
+
+<code>log.Println()</code>
+<p>Similar a la de fmt, solo que con log podemos especificar que se guarde ese mensaje en un archivo</p>
+
+<code>log.Fatalln()</code>
+<p>Es una función donde todo muere</p>
+
+<code>os.Exit()</code>
+
+<code>log.Panicln()</code>
+<p>Esta es un poco más suave que Fatalln() porque con esta las funciones diferidas si corren y se puede usar recover</p>
+
+<code>panic()</code>
 
 
 <p> Información tomada de: </p>
