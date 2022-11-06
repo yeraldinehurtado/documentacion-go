@@ -4,7 +4,7 @@
 
 <p>Acoplar excepciones a una estructura de control, como la expresión try-catch-finally, da como resultado un código complicado. También tiende a incentivar a los programadores a etiquetar demasiados errores comunes, como por ejemplo no abrir un archivo, como excepcionales.</p>
 
-<p>Go toma un enfoque diferente. Para el manejo simple de errores, los retornos multi-valor de las funciones en Go facilitan el reporte de un error sin sobrecargar el valor de retorno. Un tipo de error canónico, junto con otras características de Go, hace que el manejo de errores sea agradable, pero bastante diferente del de otros lenguajes.</p>
+<p>Go toma un enfoque diferente. Para el manejo simple de errores, los retornos multi-valor de las funciones en Go facilitan el reporte de un error sin sobrecargar el valor de retorno. <a href="https://go.dev/blog/error-handling-and-go">Un tipo de error canónico, junto con otras características de Go,</a> hace que el manejo de errores sea agradable, pero bastante diferente del de otros lenguajes.</p>
 
 <p>Go también tiene algunas funciones integradas para señalar y recuperarse de condiciones realmente excepcionales. El mecanismo de recuperación se ejecuta solamente como parte del estado de una función que es generado después de un error, el cual es suficiente para manejar una catástrofe pero no requiere estructuras de control adicionales y, cuando se usa bien, para dar como resultado un código limpio de manejo de errores</p>
 
